@@ -235,8 +235,8 @@ exports.notifyDeliveryOnReadyToShip = onDocumentUpdated(
         return;
       }
 
-      const wasReady = before.status === "prêt à expédier";
-      const isReady = after.status === "prêt à expédier";
+      const wasReady = before.status === "pret_a_expedier";
+      const isReady = after.status === "pret_a_expedier";
 
       if (!wasReady && isReady) {
         logger.info(
